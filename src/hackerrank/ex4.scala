@@ -1,7 +1,7 @@
 package hackerrank
 
 
-object Solution {
+object ex4 {
 
   // Complete the aVeryBigSum function below.
   def f(num: Int, arr: List[Int]): List[Int] = {

@@ -1,4 +1,4 @@
-package hackerrank.polygon
+package geometry
 
 import java.lang.Math.{pow, sqrt}
 
