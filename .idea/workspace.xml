@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8fd960c7-1e0a-42b6-8532-d3afcfe4855d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tools/ReadText.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/numberTheory/Rational.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/ChecksumAccumulator.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -61,37 +62,38 @@
     <session id="-1908847632">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.15" value="3" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="2571" />
-          <entry key="txt" value="89" />
+          <entry key="scala" value="4385" />
+          <entry key="txt" value="125" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="89" />
-          <entry key="Scala" value="2571" />
+          <entry key="PLAIN_TEXT" value="125" />
+          <entry key="Scala" value="4385" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="scala" value="15" />
+          <entry key="scala" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Scala" value="15" />
+          <entry key="Scala" value="25" />
         </counts>
       </usages-collector>
     </session>
@@ -101,86 +103,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/numberTheory/Rational.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="56" column="38" lean-forward="true" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/numberTheory/gcd.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/numberTheory/fibonacci.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/numberTheory/pascal.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/tools/ReadText.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hackerrank/ex4.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hackerrank/temp.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="e#20#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geometry/Triangle.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geometry/PerimeterOfAPolygon.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/geometry/CartesianPlane.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="34" />
+            <state relative-caret-position="34">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -233,10 +169,12 @@
         <option value="$PROJECT_DIR$/src/geometry/Triangle.scala" />
         <option value="$PROJECT_DIR$/src/hackerrank/ex4.scala" />
         <option value="$PROJECT_DIR$/src/geometry/AreaOfAPolygon.scala" />
-        <option value="$PROJECT_DIR$/src/numberTheory/gcd.scala" />
         <option value="$PROJECT_DIR$/src/numberTheory/fibonacci.scala" />
         <option value="$PROJECT_DIR$/src/numberTheory/pascal.scala" />
         <option value="$PROJECT_DIR$/src/tools/ReadText.scala" />
+        <option value="$PROJECT_DIR$/src/tools/ChecksumAccumulator.scala" />
+        <option value="$PROJECT_DIR$/src/numberTheory/gcd.scala" />
+        <option value="$PROJECT_DIR$/src/numberTheory/Rational.scala" />
       </list>
     </option>
   </component>
@@ -254,6 +192,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,20 +210,24 @@
               <item name="hello-scala" type="b2602c69:ProjectViewProjectNode" />
               <item name="hello-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="numberTheory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hello-scala" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hello-scala" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Programación/hello-scala/src/geometry/CartesianPlane.scala" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541256818441" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541941845839" />
     <property name="last_opened_file_path" value="D:/Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -293,6 +237,7 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="numberTheory" />
+      <recent name="tools" />
       <recent name="hackerrank" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -311,13 +256,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ReadText">
-    <configuration name="AreaOfAPolygon" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="geometry.AreaOfAPolygon" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="numberTheory.Main" />
       <module name="hello-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="geometry.*" />
+          <option name="PATTERN" value="numberTheory.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -339,35 +284,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Seasons" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="tools.Seasons" />
+      <module name="hello-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Summer" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="tools.Summer" />
+      <module name="hello-scala" />
+      <option name="PROGRAM_PARAMETERS" value="cool dude" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ex2" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="ex2" />
       <module name="hello-scala" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="fibonacci" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="numberTheory.fibonacci" />
-      <module name="hello-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="numberTheory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="functionCheck" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="hackerrank.functionCheck" />
-      <module name="hello-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="geometry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -387,19 +333,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ex2" />
-      <item itemvalue="Application.functionCheck" />
-      <item itemvalue="Application.AreaOfAPolygon" />
-      <item itemvalue="Application.fibonacci" />
       <item itemvalue="Application.pascal" />
       <item itemvalue="Application.ReadText" />
+      <item itemvalue="Application.Summer" />
+      <item itemvalue="Application.Seasons" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Seasons" />
+        <item itemvalue="Application.Summer" />
         <item itemvalue="Application.ReadText" />
         <item itemvalue="Application.pascal" />
-        <item itemvalue="Application.fibonacci" />
-        <item itemvalue="Application.AreaOfAPolygon" />
-        <item itemvalue="Application.functionCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -442,14 +388,21 @@
       <option name="project" value="LOCAL" />
       <updated>1540714399680</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Programming in Scala: chapter 3">
+      <created>1541256863622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1541256863622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.2153518" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49846154" visible="true" weight="0.2217484" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -468,7 +421,6 @@
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.329718" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.329718" />
       <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.49626866" weight="0.3438178" />
-      <window_info anchor="right" id="Coverage" side_tool="true" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -477,6 +429,7 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.32995737" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -486,7 +439,8 @@
     <MESSAGE value="First commit" />
     <MESSAGE value="Calculate Area of a non-self-intersecting polygon." />
     <MESSAGE value="Some number theory" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some number theory" />
+    <MESSAGE value="Programming in Scala: chapter 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Programming in Scala: chapter 3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -564,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/Predef.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="331" column="8" selection-start-line="331" selection-start-column="8" selection-end-line="331" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/lang/Math.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -609,17 +556,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/numberTheory/gcd.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/runtime/RichInt.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/numberTheory/fibonacci.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
+        <state relative-caret-position="208">
+          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -627,16 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackerrank/temp.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="e#20#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -661,6 +591,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/numberTheory/fibonacci.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/numberTheory/pascal.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -668,17 +605,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/runtime/RichInt.scala">
+    <entry file="file://$PROJECT_DIR$/src/hackerrank/temp.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+          <folding>
+            <element signature="e#20#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/DelayedInit.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="46" column="6" selection-start-line="46" selection-start-column="6" selection-end-line="46" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/App.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="38" column="24" lean-forward="true" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/Symbol.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="15" selection-start-line="34" selection-start-column="15" selection-end-line="34" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/Predef.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
+          <caret line="261" column="6" selection-start-line="261" selection-start-column="6" selection-end-line="261" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tools/ReadText.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="52" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
+        <state relative-caret-position="238">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tools/ChecksumAccumulator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/numberTheory/gcd.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/numberTheory/Rational.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="56" column="38" lean-forward="true" selection-start-line="56" selection-start-column="38" selection-end-line="56" selection-end-column="38" />
         </state>
       </provider>
     </entry>
