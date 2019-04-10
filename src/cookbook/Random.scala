@@ -1,4 +1,4 @@
-package misc
+package cookbook
 
 object Random extends App {
   val r = scala.util.Random

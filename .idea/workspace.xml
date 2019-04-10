@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd960c7-1e0a-42b6-8532-d3afcfe4855d" name="Default Changelist" comment="Scala Cookbook Loops">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hello-scala.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/Loops.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/Loops.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/Random.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/Random.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/misc/Strings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/misc/Strings.scala" afterDir="false" />
-    </list>
+    <list default="true" id="8fd960c7-1e0a-42b6-8532-d3afcfe4855d" name="Default Changelist" comment="Scala Cookbook Classes wip" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -106,8 +100,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Loops.scala" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/misc/Loops.scala">
+      <file leaf-file-name="Loops.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cookbook/Loops.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="27">
               <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
@@ -118,8 +112,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Classes.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cookbook/Classes.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Strings.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/misc/Strings.scala">
+        <entry file="file://$PROJECT_DIR$/src/cookbook/Strings.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
               <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
@@ -128,7 +131,7 @@
         </entry>
       </file>
       <file leaf-file-name="Random.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/misc/Random.scala">
+        <entry file="file://$PROJECT_DIR$/src/cookbook/Random.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
@@ -196,6 +199,8 @@
         <option value="$PROJECT_DIR$/src/misc/Random.scala" />
         <option value="$PROJECT_DIR$/src/misc/Strings.scala" />
         <option value="$PROJECT_DIR$/src/misc/Loops.scala" />
+        <option value="$PROJECT_DIR$/src/cookbook/Loops.scala" />
+        <option value="$PROJECT_DIR$/src/cookbook/Classes.scala" />
       </list>
     </option>
   </component>
@@ -232,7 +237,7 @@
               <item name="hello-scala" type="b2602c69:ProjectViewProjectNode" />
               <item name="hello-scala" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="misc" type="462c0819:PsiDirectoryNode" />
+              <item name="cookbook" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hello-scala" type="b2602c69:ProjectViewProjectNode" />
@@ -299,6 +304,7 @@
       <recent name="hackerrank" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/cookbook" />
       <recent name="$PROJECT_DIR$/src/tools" />
       <recent name="D:\Programación\Pruebas\src\hackerrank" />
     </key>
@@ -315,23 +321,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MatchAndSwitch (1)">
+  <component name="RunManager" selected="Application.Classes">
     <configuration name="BreakAndContinue" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="misc.BreakAndContinue" />
+      <option name="MAIN_CLASS_NAME" value="cookbook.BreakAndContinue" />
       <module name="hello-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="misc.*" />
+          <option name="PATTERN" value="cookbook.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Classes" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cookbook.Classes" />
+      <module name="hello-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cookbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
     </configuration>
     <configuration name="MatchAndSwitch (1)" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="misc.MatchAndSwitch" />
+      <option name="MAIN_CLASS_NAME" value="cookbook.MatchAndSwitch" />
       <module name="hello-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="misc.*" />
+          <option name="PATTERN" value="cookbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -347,21 +363,11 @@
       </extension>
     </configuration>
     <configuration name="MatchExample" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="misc.MatchExample" />
+      <option name="MAIN_CLASS_NAME" value="cookbook.MatchExample" />
       <module name="hello-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="misc.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="Strings" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="misc.Strings" />
-      <module name="hello-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="misc.*" />
+          <option name="PATTERN" value="cookbook.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -372,19 +378,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.ex2" />
-      <item itemvalue="Application.Strings" />
       <item itemvalue="Application.BreakAndContinue" />
       <item itemvalue="Application.MatchAndSwitch" />
       <item itemvalue="Application.MatchAndSwitch (1)" />
       <item itemvalue="Application.MatchExample" />
+      <item itemvalue="Application.Classes" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Classes" />
         <item itemvalue="Application.MatchAndSwitch (1)" />
         <item itemvalue="Application.MatchExample" />
         <item itemvalue="Application.MatchAndSwitch" />
         <item itemvalue="Application.BreakAndContinue" />
-        <item itemvalue="Application.Strings" />
       </list>
     </recent_temporary>
   </component>
@@ -448,11 +454,32 @@
       <option name="project" value="LOCAL" />
       <updated>1554799559739</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Scala Cookbook Match">
+      <created>1554889927145</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1554889927145</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Scala Cookbook Classes wip">
+      <created>1554901398108</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1554901398108</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Scala Cookbook Classes wip">
+      <created>1554903320865</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554903320865</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="993" y="25" width="927" height="1055" extended-state="4" />
+    <frame x="993" y="25" width="927" height="925" extended-state="4" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -463,7 +490,7 @@
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50159913" side_tool="true" weight="0.329718" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49307036" visible="true" weight="0.27548808" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49307036" visible="true" weight="0.32070708" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49840087" weight="0.329718" />
       <window_info id="Capture Tool" order="4" />
@@ -495,7 +522,10 @@
     <MESSAGE value="Programming in Scala: chapter 3" />
     <MESSAGE value="Scala Cookbook Strings" />
     <MESSAGE value="Scala Cookbook Loops" />
-    <option name="LAST_COMMIT_MESSAGE" value="Scala Cookbook Loops" />
+    <MESSAGE value="Scala Cookbook Match" />
+    <MESSAGE value="Scala Cookbook Classes" />
+    <MESSAGE value="Scala Cookbook Classes wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="Scala Cookbook Classes wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -507,22 +537,21 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/src/misc/Strings.scala</url>
+          <url>file://$PROJECT_DIR$/src/cookbook/Strings.scala</url>
           <line>34</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="scala-line">
+          <url>file://$PROJECT_DIR$/src/cookbook/Classes.scala</url>
+          <line>41</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/misc/Loops.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="34" column="48" lean-forward="true" selection-start-line="34" selection-start-column="48" selection-end-line="34" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/numberTheory/Rational.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="702">
@@ -530,7 +559,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/Strings.scala">
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Strings.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
           <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
@@ -558,7 +587,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/Random.scala">
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Random.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="15" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
@@ -750,7 +779,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/Random.scala">
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Random.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
@@ -778,20 +807,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/Strings.scala">
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Strings.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="373">
           <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/misc/Loops.scala">
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Loops.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="106" column="15" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="15" />
           <folding>
             <element signature="e#925#957#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cookbook/Classes.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="46" column="39" selection-start-line="46" selection-start-column="39" selection-end-line="46" selection-end-column="39" />
         </state>
       </provider>
     </entry>

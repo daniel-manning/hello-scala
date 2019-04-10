@@ -1,4 +1,4 @@
-package misc
+package cookbook
 
 object Strings extends App {
   println("scala".drop(2).take(2).capitalize)
