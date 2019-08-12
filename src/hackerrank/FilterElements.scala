@@ -10,7 +10,7 @@ object FilterElements {
       val args = readArray
       val array = readArray
 
-      val map: Map[Int, Int] = array.groupBy(identity).mapValues(_.length)
+      val map = array.groupBy(identity).view.mapValues(_.length)
       val result = array.distinct.filter(map(_) >= args(1))
 
       println(if (result.isEmpty) "-1" else result.mkString(" "))

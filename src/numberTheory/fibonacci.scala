@@ -1,5 +1,7 @@
 package numberTheory
 
+import scala.io.StdIn
+
 object fibonacci {
 
   def fibonacci(x:Int):Int = {
@@ -9,7 +11,7 @@ object fibonacci {
   }
 
   def main(args: Array[String]) {
-    println(fibonacci(readInt()))
+    println(fibonacci(StdIn.readInt()))
 
   }
 }

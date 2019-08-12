@@ -22,7 +22,7 @@ object ListsAndGCD {
 
     import scala.math.min
 
-    val result = factorizations.par
+    val result = factorizations
       .reduce((m1, m2) => m1.keySet.intersect(m2.keySet).map(x => x -> min(m1(x), m2(x))).toMap)
       .toArray.sortBy( t => t._1)
       .map(t => t._1 + " " + t._2).mkString(" ")

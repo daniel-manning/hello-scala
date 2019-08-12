@@ -1,5 +1,7 @@
 package numberTheory
 
+import scala.io.StdIn
+
 object gcd {
 
   def gcd(x: Int, y: Int): Int =
@@ -14,7 +16,7 @@ object gcd {
   }
 
   def main(args: Array[String]) {
-    acceptInputAndComputeGCD(readLine().trim().split(" ").map(x=>x.toInt).toList)
+    acceptInputAndComputeGCD(StdIn.readLine().trim().split(" ").map(x=>x.toInt).toList)
 
   }
 }
