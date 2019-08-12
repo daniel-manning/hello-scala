@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd960c7-1e0a-42b6-8532-d3afcfe4855d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/scala_sdk_2_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackerrank/Fibonacci.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hello-scala.iml" beforeDir="false" afterPath="$PROJECT_DIR$/hello-scala.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackerrank/FilterElements.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerrank/FilterElements.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackerrank/ListsAndGCD.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerrank/ListsAndGCD.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/numberTheory/fibonacci.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/numberTheory/fibonacci.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/numberTheory/gcd.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/numberTheory/gcd.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,20 +32,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            <state relative-caret-position="126">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/collection/immutable/ListMap.scala">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/hackerrank/Fibonacci.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4122">
-              <caret line="243" column="35" selection-start-line="243" selection-start-column="34" selection-end-line="243" selection-end-column="35" />
+            <state relative-caret-position="432">
+              <caret line="24" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -77,6 +71,7 @@
       <find>head</find>
       <find>line</find>
       <find>+</find>
+      <find>cache</find>
     </findStrings>
     <replaceStrings>
       <replace>Point</replace>
@@ -136,6 +131,7 @@
         <option value="$PROJECT_DIR$/src/hackerrank/FilterElements.scala" />
         <option value="$PROJECT_DIR$/src/hackerrank/ListsAndGCD.scala" />
         <option value="$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala" />
+        <option value="$PROJECT_DIR$/src/hackerrank/Fibonacci.scala" />
       </list>
     </option>
   </component>
@@ -242,7 +238,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PentagonalNumbers">
+  <component name="RunManager" selected="Application.Fibonacci">
+    <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="hackerrank.Fibonacci" />
+      <module name="hello-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="hackerrank.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListsAndGCD" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="hackerrank.ListsAndGCD" />
       <module name="hello-scala" />
@@ -284,6 +293,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Fibonacci" />
         <item itemvalue="Application.PentagonalNumbers" />
         <item itemvalue="Application.StringCompression" />
         <item itemvalue="Application.ListsAndGCD" />
@@ -406,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563522946423</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="wip">
+      <created>1565596590984</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565596590984</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -459,7 +476,8 @@
     <MESSAGE value="Filter Elements" />
     <MESSAGE value="Lists and GCD - HackerRank" />
     <MESSAGE value="String Compression - HackerRank" />
-    <option name="LAST_COMMIT_MESSAGE" value="String Compression - HackerRank" />
+    <MESSAGE value="wip" />
+    <option name="LAST_COMMIT_MESSAGE" value="wip" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -520,7 +538,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/collection/immutable/List.scala" />
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/package.scala" />
     <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.12.6-sources.jar!/scala/runtime/RichInt.scala" />
     <entry file="file://$PROJECT_DIR$/src/hackerrank/ex4.scala">
@@ -827,8 +844,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="7" column="25" lean-forward="true" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        <state relative-caret-position="126">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hackerrank/Fibonacci.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="24" />
         </state>
       </provider>
     </entry>
