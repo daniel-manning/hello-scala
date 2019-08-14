@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8fd960c7-1e0a-42b6-8532-d3afcfe4855d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/hackerrank/Lemurs.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hackerrank/DifferentWays.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,10 +33,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/hackerrank/Lemurs.scala">
+        <entry file="file://$PROJECT_DIR$/src/hackerrank/DifferentWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="308">
+              <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -125,6 +124,7 @@
         <option value="$PROJECT_DIR$/src/hackerrank/Fibonacci.scala" />
         <option value="$PROJECT_DIR$/src/hackerrank/PentagonalNumbers.scala" />
         <option value="$PROJECT_DIR$/src/hackerrank/Lemurs.scala" />
+        <option value="$PROJECT_DIR$/src/hackerrank/DifferentWays.scala" />
       </list>
     </option>
   </component>
@@ -231,9 +231,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PentagonalNumbers">
+  <component name="RunManager" selected="Application.Fibonacci">
     <configuration name="Fibonacci" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="hackerrank.Lemurs" />
+      <option name="MAIN_CLASS_NAME" value="hackerrank.DifferentWays" />
       <module name="hello-scala" />
       <extension name="coverage">
         <pattern>
@@ -286,8 +286,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PentagonalNumbers" />
         <item itemvalue="Application.Fibonacci" />
+        <item itemvalue="Application.PentagonalNumbers" />
         <item itemvalue="Application.StringCompression" />
         <item itemvalue="Application.ListsAndGCD" />
       </list>
@@ -423,7 +423,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565605088884</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Pentagonal Numbers">
+      <created>1565681030020</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1565681030020</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,7 +485,8 @@
     <MESSAGE value="String Compression - HackerRank" />
     <MESSAGE value="wip" />
     <MESSAGE value="Fibonacci" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fibonacci" />
+    <MESSAGE value="Pentagonal Numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Pentagonal Numbers" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -539,34 +547,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/hackerrank/ex4.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometry/Triangle.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="63" selection-start-line="31" selection-start-column="63" selection-end-line="31" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometry/PerimeterOfAPolygon.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/geometry/CartesianPlane.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/numberTheory/pascal.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -841,10 +821,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackerrank/Fibonacci.scala">
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/collection/ArrayOps.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="18">
+          <caret line="1512" column="6" selection-start-line="1512" selection-start-column="6" selection-end-line="1512" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/collection/Seq.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="557" column="6" selection-start-line="557" selection-start-column="6" selection-end-line="557" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -855,17 +842,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/collection/ArrayOps.scala">
+    <entry file="file://$PROJECT_DIR$/src/hackerrank/Fibonacci.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1512" column="6" selection-start-line="1512" selection-start-column="6" selection-end-line="1512" selection-end-column="6" />
+        <state relative-caret-position="90">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hackerrank/Lemurs.scala">
+    <entry file="jar://$USER_HOME$/Downloads/jdk-8u181-linux-x64/jdk1.8.0_181/src.zip!/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="234">
+          <caret line="901" column="16" selection-start-line="901" selection-start-column="16" selection-end-line="901" selection-end-column="16" />
+          <folding>
+            <element signature="e#34168#34169#0" expanded="true" />
+            <element signature="e#34202#34203#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/Array.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="391" column="6" selection-start-line="391" selection-start-column="6" selection-end-line="391" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.13.0-sources.jar!/scala/collection/mutable/ArrayBuffer.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1443">
+          <caret line="132" column="6" selection-start-line="132" selection-start-column="6" selection-end-line="132" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hackerrank/DifferentWays.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="23" column="4" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
