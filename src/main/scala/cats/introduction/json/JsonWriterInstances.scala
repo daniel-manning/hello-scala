@@ -1,4 +1,4 @@
-package cats.introduction
+package cats.introduction.json
 
 object JsonWriterInstances {
 
