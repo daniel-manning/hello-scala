@@ -1,4 +1,4 @@
-package main.scala.numberTheory
+package numberTheory
 
 import scala.io.StdIn
 

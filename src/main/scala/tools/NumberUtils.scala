@@ -1,4 +1,4 @@
-package main.scala.tools
+package tools
 
 object NumberUtils{
   //Compares two Doubles up to a given precision epsilon

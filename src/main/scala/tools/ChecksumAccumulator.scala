@@ -1,4 +1,4 @@
-package main.scala.tools
+package tools
 
 import scala.collection.mutable
 

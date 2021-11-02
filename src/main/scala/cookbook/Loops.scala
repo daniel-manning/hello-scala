@@ -1,4 +1,4 @@
-package main.scala.cookbook
+package cookbook
 
 object Loops extends App {
     val a = Array("apple", "banana", "orange", "strawberry")

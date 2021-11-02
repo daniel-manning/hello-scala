@@ -1,4 +1,4 @@
-package main.scala.hackerrank
+package hackerrank
 
 
 object ex4 {

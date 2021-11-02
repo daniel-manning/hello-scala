@@ -1,4 +1,4 @@
-package main.scala.hackerrank
+package hackerrank
 
 import java.io._
 import java.math._

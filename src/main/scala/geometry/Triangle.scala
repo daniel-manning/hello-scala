@@ -1,4 +1,4 @@
-package main.scala.geometry
+package geometry
 
 
 case class Triangle(a: (Int, Int), b: (Int, Int), c: (Int, Int))

@@ -1,4 +1,4 @@
-package main.scala.cookbook
+package cookbook
 
 case class Person(var name: String, var age: Int)
 object Person{

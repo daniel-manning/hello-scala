@@ -1,4 +1,4 @@
-package main.scala.hackerrank
+package hackerrank
 
 import scala.collection.immutable.ArraySeq
 
