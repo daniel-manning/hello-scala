@@ -7,11 +7,25 @@ object JsonWriterInstances {
   }
 
   implicit val personWriter: JsonWriter[Person] = new JsonWriter[Person] {
-    def write(value: Person): Json = JsObject(Map(
-      "name" -> JsString(value.name),
-      "email" -> JsString(value.email)
-    ))
+    def write(value: Person): Json = JsObject(
+      Map(
+        "name" -> JsString(value.name),
+        "email" -> JsString(value.email)
+      )
+    )
   }
 
   // etc...
+
+  // Recursive implicit resolution:
+  implicit def optionWriter[A](implicit
+      writer: JsonWriter[A]
+  ): JsonWriter[Option[A]] =
+    new JsonWriter[Option[A]] {
+      def write(option: Option[A]): Json =
+        option match {
+          case Some(value) => writer.write(value)
+          case None        => JsNull
+        }
+    }
 }
