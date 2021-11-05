@@ -132,6 +132,6 @@ def factorial(n : Int): Logged[Int] =
       slowly(factorial(n - 1).map(_ * n): Logged[Int])
     }
     _ <- Vector(s"fact $n $ans").tell
-  }
+  } yield ans
 
 val (log, res) = factorial(5).run
