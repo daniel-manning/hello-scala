@@ -1,6 +1,6 @@
 import cats.instances.int._
 import cats.instances.option._
-import cats.monoidsandsemigroups.SuperAdder
+import cats.scalawithcats.part1.monoidsandsemigroups.SuperAdder
 
 SuperAdder.Part2.add(List(1, 2, 3))
 // val res0: Int = 6

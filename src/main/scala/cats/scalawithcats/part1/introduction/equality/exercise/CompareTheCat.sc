@@ -4,7 +4,7 @@ import cats.syntax.eq._ // for ===
 import cats.instances.int._ // for Eq
 import cats.instances.string._ // for Eq
 
-import cats.introduction.equality.exercise.Cat
+import cats.scalawithcats.part1.introduction.equality.exercise.Cat
 
 // Define a cat:
 val cat1 = Cat("Garfield", 38, "orange and black")

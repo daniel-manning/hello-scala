@@ -1,4 +1,4 @@
-package cats.monoidsandsemigroups
+package cats.scalawithcats.part1.monoidsandsemigroups
 
 import cats.Monoid
 import cats.Semigroup

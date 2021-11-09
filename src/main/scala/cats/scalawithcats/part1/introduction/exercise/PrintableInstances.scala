@@ -1,4 +1,4 @@
-package cats.introduction.exercise
+package cats.scalawithcats.part1.introduction.exercise
 
 object PrintableInstances {
 

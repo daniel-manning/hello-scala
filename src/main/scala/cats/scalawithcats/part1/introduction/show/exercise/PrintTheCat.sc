@@ -2,7 +2,7 @@ import cats.Show
 import cats.instances.int._    // for Show
 import cats.instances.string._ // for Show
 import cats.syntax.show._      // for show
-import cats.introduction.show.exercise.Cat
+import cats.scalawithcats.part1.introduction.show.exercise.Cat
 
 // Define a cat:
 val cat = Cat("Wiwi", 3, "brown")
