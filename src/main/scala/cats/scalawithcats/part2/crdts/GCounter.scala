@@ -1,16 +1,23 @@
 package cats.scalawithcats.part2.crdts
 
-final case class GCounter(counters: Map[String, Int]) {
+import cats.instances.list._ // for Monoid
+import cats.instances.map._ // for Monoid
+import cats.kernel.CommutativeMonoid
+import cats.syntax.foldable._ // for combineAll
+import cats.syntax.semigroup._ // for |+|
 
-  def increment(machine: String, amount: Int): GCounter = {
-    val value: Int = amount + counters.getOrElse(machine, 0)
+final case class GCounter[A](counters: Map[String, A]) {
+
+  def increment(machine: String, a: A)(implicit
+      m: CommutativeMonoid[A]
+  ): GCounter[A] = {
+    val value: A = a |+| counters.getOrElse(machine, m.empty)
     GCounter(counters + (machine -> value))
   }
 
-  def merge(that: GCounter): GCounter =
-    GCounter(that.counters ++ this.counters.map { case (k, v) =>
-      k -> (v max that.counters.getOrElse(k, 0))
-    })
+  def merge(that: GCounter[A])(implicit b: BoundedSemiLattice[A]): GCounter[A] =
+    GCounter(this.counters |+| that.counters)
 
-  def total: Int = counters.values.sum
+  def total(implicit m: CommutativeMonoid[A]): A =
+    counters.values.toList.combineAll
 }
