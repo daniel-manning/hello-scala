@@ -6,18 +6,45 @@ import cats.kernel.CommutativeMonoid
 import cats.syntax.foldable._ // for combineAll
 import cats.syntax.semigroup._ // for |+|
 
-final case class GCounter[A](counters: Map[String, A]) {
+import cats.scalawithcats.part2.crdts.KeyValueStore.KvsOps
 
-  def increment(machine: String, a: A)(implicit
-      m: CommutativeMonoid[A]
-  ): GCounter[A] = {
-    val value: A = a |+| counters.getOrElse(machine, m.empty)
-    GCounter(counters + (machine -> value))
-  }
+trait GCounter[F[_, _], K, V] {
 
-  def merge(that: GCounter[A])(implicit b: BoundedSemiLattice[A]): GCounter[A] =
-    GCounter(this.counters |+| that.counters)
+  def increment(f: F[K, V])(k: K, v: V)(implicit
+      m: CommutativeMonoid[V]
+  ): F[K, V]
 
-  def total(implicit m: CommutativeMonoid[A]): A =
-    counters.values.toList.combineAll
+  def merge(f1: F[K, V], f2: F[K, V])(implicit
+      b: BoundedSemiLattice[V]
+  ): F[K, V]
+
+  def total(f: F[K, V])(implicit m: CommutativeMonoid[V]): V
+}
+
+object GCounter {
+
+  def apply[F[_, _], K, V](implicit
+      counter: GCounter[F, K, V]
+  ): GCounter[F, K, V] = counter
+
+  implicit def gCounterInstance[F[_, _], K, V](implicit
+      kvs: KeyValueStore[F],
+      km: CommutativeMonoid[F[K, V]]
+  ): GCounter[F, K, V] =
+    new GCounter[F, K, V] {
+
+      def increment(
+          f: F[K, V]
+      )(k: K, v: V)(implicit m: CommutativeMonoid[V]): F[K, V] = {
+        val total = f.getOrElse(k, m.empty) |+| v
+        f.put(k, total)
+      }
+
+      def merge(f1: F[K, V], f2: F[K, V])(implicit
+          b: BoundedSemiLattice[V]
+      ): F[K, V] = f1 |+| f2
+
+      def total(f: F[K, V])(implicit m: CommutativeMonoid[V]): V =
+        f.values.combineAll
+    }
 }
