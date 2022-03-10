@@ -10,6 +10,7 @@ import org.apache.kafka.common.serialization.StringDeserializer
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 import org.testcontainers.containers.Network
+import org.testcontainers.utility.DockerImageName
 import vulcan.Codec
 
 import java.time.LocalDateTime
@@ -27,10 +28,9 @@ class Test extends AnyFlatSpec with ForAllTestContainer with Matchers {
   val network: Network = Network.newNetwork()
 
   val kafkaContainer: KafkaContainer =
-    KafkaContainer.Def(kafkaVersion).createContainer()
-  val schemaRegistryContainer: GenericContainer = SchemaRegistryContainer
-    .Def(network, hostName, kafkaVersion)
-    .createContainer()
+    KafkaContainer(DockerImageName.parse(s"confluentinc/cp-kafka:$kafkaVersion"))
+
+  val mysqlContainer: MySQLContainer = MySQLContainer()
 
   kafkaContainer.container
     .withNetwork(network)
@@ -44,13 +44,9 @@ class Test extends AnyFlatSpec with ForAllTestContainer with Matchers {
     )
 
   override val container: MultipleContainers =
-    MultipleContainers(kafkaContainer, schemaRegistryContainer)
+    MultipleContainers(mysqlContainer, kafkaContainer)
 
   def getKafkaAddress: String = kafkaContainer.bootstrapServers
-
-  def getSchemaRegistryAddress: String =
-    s"http://${schemaRegistryContainer.container.getHost}:${schemaRegistryContainer.container
-      .getMappedPort(SchemaRegistryContainer.defaultSchemaPort)}"
 
   "Schema registry container" should "be started" in {
 
@@ -81,47 +77,25 @@ class Test extends AnyFlatSpec with ForAllTestContainer with Matchers {
 
   "Message" should "be read" in {
 
-    implicit val messageCodec: Codec[Message] =
-      Codec
-        .record[Message](
-          name = "Message",
-          namespace = "testcontainers"
-        ) { field =>
-          (
-            field("id", _.id),
-            field("content", _.content)
-          ).mapN(Message)
-        }
-
-
-    val avroSettings = AvroSettings {
-      SchemaRegistryClientSettings[IO](getSchemaRegistryAddress)
-        .withAuth(Auth.Basic("username", "password"))
-    }
-
-    import fs2.kafka.vulcan.{avroDeserializer, avroSerializer}
-    import fs2.kafka.{RecordDeserializer, RecordSerializer}
-
-    implicit val personSerializer: RecordSerializer[IO, Message] =
-      avroSerializer[Message].using(avroSettings)
-
-    implicit val personDeserializer: RecordDeserializer[IO, Message] =
-      avroDeserializer[Message].using(avroSettings)
-
     import fs2.kafka._
 
+    implicit val keyDeserializer: RecordDeserializer[IO, String] = RecordDeserializer.lift(Deserializer.string)
+    implicit val valueDeserializer: RecordDeserializer[IO, String] = RecordDeserializer.lift(Deserializer.string)
+    implicit val keySerializer: RecordSerializer[IO, String] = RecordSerializer.lift(Serializer.string)
+    implicit val valueSerializer: RecordSerializer[IO, String] = RecordSerializer.lift(Serializer.string)
+
     val consumerSettings =
-      ConsumerSettings[IO, String, Message]
+      ConsumerSettings[IO, String, String](keyDeserializer, valueDeserializer)
         .withAutoOffsetReset(AutoOffsetReset.Earliest)
         .withBootstrapServers("localhost:9092")
         .withGroupId("group")
 
     val producerSettings =
-      ProducerSettings[IO, String, Message]
+      ProducerSettings[IO, String, String](keySerializer, valueSerializer)
         .withBootstrapServers("localhost:9092")
 
-    def processRecord(record: ConsumerRecord[String, Message]): IO[(String, Message)] =
-      IO.pure(record.key -> Message(LocalDateTime.now().toString, record.key))
+    def processRecord(record: ConsumerRecord[String, String]): IO[(String, String)] =
+      IO.pure(record.key -> s"${LocalDateTime.now()}: ${record.key}")
 
     val stream =
       fs2.kafka.KafkaConsumer.stream(consumerSettings)
